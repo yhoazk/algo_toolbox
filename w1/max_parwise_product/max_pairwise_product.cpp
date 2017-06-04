@@ -3,7 +3,14 @@
 
 using namespace std;
 
+/* This solution fails in the case:
+2
+100000 90000
+Returns:
+1410065408
 
+Also the time complexity is O(n^2) too slow
+ */
 int maxPairwiseProduct(const std::vector<int>& numbers)
 {
   int result = 0;
