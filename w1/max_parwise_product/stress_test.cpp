@@ -57,7 +57,7 @@ long long maxPairwiseProductFast(const vector<int>& numbers)
 
 int main(int argc, char const *argv[])
 {
-  //return maxPairwiseProductFast({1,2,3,4,5,6,7,7,7,5});
+  return maxPairwiseProductFast({3,5});
   while (true)
   {
     int n = rand() % 10000 + 2;
