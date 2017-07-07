@@ -17,3 +17,6 @@ g++ -pipe -O2 -std=c++14 <filename> -lm
 
 
 [https://courses.csail.mit.edu/6.851/spring12/lectures/L01.html](https://courses.csail.mit.edu/6.851/spring12/lectures/L01.html)
+
+
+## Tries & Hash Maps
