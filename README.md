@@ -20,3 +20,7 @@ g++ -pipe -O2 -std=c++14 <filename> -lm
 
 
 ## Tries & Hash Maps
+
+
+
+[http://cs.stanford.edu/people/abisee/gs.pdf](http://cs.stanford.edu/people/abisee/gs.pdf)
