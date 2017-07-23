@@ -3,4 +3,6 @@ build/
 *.swp
 *.exe
 *.out
+*.o
 .idea/
+cmake-build-debug/*
