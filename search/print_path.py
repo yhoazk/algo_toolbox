@@ -17,6 +17,7 @@
 # You may assume that all test cases for this function
 # will have a path from init to goal.
 # ----------
+from pprint import pprint as print
 
 grid = [[0, 0, 1, 0, 0, 0],
         [0, 0, 0, 0, 0, 0],
@@ -26,6 +27,10 @@ grid = [[0, 0, 1, 0, 0, 0],
 init = [0, 0]
 goal = [len(grid)-1, len(grid[0])-1]
 cost = 1
+
+
+path = [[' ' for c in r] for r in grid]
+expand = [[-1 for c in r] for r in grid]
 
 delta = [[-1, 0 ], # go up
          [ 0, -1], # go left
@@ -44,6 +49,7 @@ def search(grid,init,goal,cost):
     x = init[0]
     y = init[1]
     g = 0
+    k = 0
 
     open = [[g, x, y]]
 
@@ -51,6 +57,7 @@ def search(grid,init,goal,cost):
     resign = False # flag set if we can't find expand
 
     while not found and not resign:
+        expanded = False
         if len(open) == 0:
             resign = True
             return 'fail'
@@ -62,6 +69,8 @@ def search(grid,init,goal,cost):
             y = next[2]
             g = next[0]
 
+            print("Next x. " + str(x) + " y: " +str(y) + " g: " + str(g))
+
             if x == goal[0] and y == goal[1]:
                 found = True
             else:
@@ -69,11 +78,15 @@ def search(grid,init,goal,cost):
                     x2 = x + delta[i][0]
                     y2 = y + delta[i][1]
                     if x2 >= 0 and x2 < len(grid) and y2 >=0 and y2 < len(grid[0]):
+                        expanded = True
                         if closed[x2][y2] == 0 and grid[x2][y2] == 0:
                             g2 = g + cost
                             open.append([g2, x2, y2])
                             closed[x2][y2] = 1
-
+        if expanded or found:
+            expand[x][y] = k
+            k = k + 1
+    print(expand)
     return path # make sure you return the shortest path
 
-print search(grid,init,goal,cost)
+print(search(grid,init,goal,cost))

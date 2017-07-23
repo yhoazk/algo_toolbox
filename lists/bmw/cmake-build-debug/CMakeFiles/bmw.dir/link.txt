@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/bmw.dir/main.cpp.o  -o bmw 
