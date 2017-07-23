@@ -1,3 +1,0 @@
-/home/porko/workspace/algo_toolbox/lists/bmw/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/porko/workspace/algo_toolbox/lists/bmw/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/porko/workspace/algo_toolbox/lists/bmw/cmake-build-debug/CMakeFiles/bmw.dir
