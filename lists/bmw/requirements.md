@@ -2,15 +2,6 @@
 ##### Brief
 ##########################################################################
 
-This task is provided as part of your telefone interview. It should be
-solved within four hours after reception. The solution has to be sent to
-Daniel.Kroner@bmw.de. If there are any questions regarding the task
-description, feel free to contact me at any time.
-
-Daniel Kroner
-Tel: +49 731 3780 4171
-Mobil: +49 152 5480 4671
-
 ##########################################################################
 ##### TASK
 ##########################################################################
