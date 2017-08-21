@@ -28,3 +28,9 @@ g++ -pipe -O2 -std=c++14 <filename> -lm
 
 ## Path finding
 [http://www.redblobgames.com/pathfinding/a-star/introduction.html](http://www.redblobgames.com/pathfinding/a-star/introduction.html)
+
+
+
+## Aproximation algorithms
+
+[http://www.designofapproxalgs.com/](http://www.designofapproxalgs.com/)
