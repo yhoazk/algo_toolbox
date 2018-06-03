@@ -22,9 +22,12 @@ int fibonacci_naive(int n) {
 }
 
 int fibonacci_fast(int n) {
-    // write your code here
-
-    return 0;
+    int a=0, b=1, c;
+    for(int i=0; i < n; ++i){
+      c=a+b;
+      a=b; b=c;
+    }
+    return a; // here returning a because of the first 2 numbers of the seq
 }
 
 void test_solution() {
@@ -39,7 +42,8 @@ int main() {
     std::cin >> n;
 
     std::cout << fibonacci_naive(n) << '\n';
-    //test_solution();
-    //std::cout << fibonacci_fast(n) << '\n';
+    std::cout << fibonacci_fast(n) << '\n';
+    test_solution();
+    std::cout << fibonacci_fast(n) << '\n';
     return 0;
 }

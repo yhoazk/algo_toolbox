@@ -28,9 +28,27 @@ int fib_req(int n)
 }
 
 
+/* Helper function to find the Pisano sequence for the exercise 5 */
+
+long long fib_mod(long long n, long long m){
+  long long a=0,b=1,c=0;
+
+    std::cout << "F: " << a << " m: " << a % m << '\n';
+    std::cout << "F: " << b << " m: " << b % m << '\n';
+  for(long long i = 0; i < n; i++){
+    c = a + b;
+    a=b; b=c;
+    std::cout << "i:" << i << " F: " << c << " m: " << c%m  << '\n';
+  }
+}
+
+
+
 int main(int argc, char const *argv[]) {
-    int n;
-    std::cin >> n;
-    std::cout << fib_seq(n) << " :: " << fib_req(n) << std::endl;
+    long long  n, m;
+    std::cin >> n >> m;
+    //std::cout << fib_seq(n) << " :: " << fib_req(n) << std::endl;
+    std::cout << fib_mod(n, m) << std::endl;
+
   return 0;
 }

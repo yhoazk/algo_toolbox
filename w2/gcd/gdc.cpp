@@ -27,6 +27,8 @@ int main(int argc, char const *argv[]) {
   std::cout << "Start" << std::endl;
   std::cout << naive_gdc(73918848,61653264) << "\n";
   std::cout << "Done" << std::endl;
-  std::cout << fast_gdc(73918848,61653264) << "\n";
+  std::cout << fast_gdc(18,35) << "\n";
+  std::cout << fast_gdc(28851538,1183019) << "\n";
+  std::cout << fast_gdc(1386,1176) << "\n";
   return 0;
 }
