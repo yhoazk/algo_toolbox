@@ -1,7 +1,9 @@
 #include <iostream>
 
 
-
+// Here as we are precharging a and b the state goes 1 step ahead
+// that is why we are returning a instead of C, A stores the last
+// state at the end of the for cycle
 int fib_seq(int n)
 {
     int a=0,b=1,c;
